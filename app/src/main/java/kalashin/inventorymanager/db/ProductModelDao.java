@@ -20,6 +20,9 @@ public interface ProductModelDao {
     @Query("select * from ProductModel where prodID = :itemId")
     ProductModel getProductById(int itemId);
 
+    @Query("delete from ProductModel")
+    void deleteAllProducts();
+
     @Insert(onConflict = REPLACE)
     void addProduct(ProductModel ProductModel);
 
