@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Invetory Manager</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="measure">
+        <item>Unidade</item>
+        <item>Dezena</item>
+        <item>Dúzia</item>
+        <item>Centena</item>
+        <item>Quilo</item>
+        <item>Grama</item>
+        <item>Miligrama</item>
+        <item>Litro</item>
+        <item>Mililitro</item>
+    </string-array>
+
+</resources>

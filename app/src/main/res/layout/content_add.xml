@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView android:id="@+id/item_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="Nome"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextProdName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="Descrição do produto"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="Preço"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextPrice"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:inputType="number|numberDecimal"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="Categoria"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextCategory"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="Medida"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerMeasure"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:entries="@array/measure"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="Estoque"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextQuantity"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="Estoque Min"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextMinQuantity"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:text="Estoque Max"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextMaxQuantity"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
